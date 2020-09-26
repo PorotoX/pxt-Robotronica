@@ -1,10 +1,10 @@
 {
-    "name": "pxt-AlfonsoIOT",
+    "name": "pxt-Robotrónica",
     "version": "1.0.0",
-    "description": "Blocks to simplify using Micro:bit and wifi",
+    "description": "Bloques tomados prestados de otra extensión.",
     "license": "MIT",
     "dependencies": {
-        "core": "*",		
+        "core": "*",
 		"pxt-AlfonsoIOT-plugin": "github:AlfonsoIOT/pxt-robotic-shield",
         "SSD1306_OLED": "github:tinkertanker/pxt-oled-ssd1306"
     },
