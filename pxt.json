@@ -1,7 +1,7 @@
 {
-    "name": "pxt-Robotrónica",
+    "name": "pxt-Robotrónica Salto",
     "version": "1.0.0",
-    "description": "Bloques tomados prestados de otra extensión.",
+    "description": "Bloques tomados prestados de otra extensión. Robotrónica Salto Uruguay.",
     "license": "MIT",
     "dependencies": {
         "core": "*",
