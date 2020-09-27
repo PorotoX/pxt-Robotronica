@@ -18,7 +18,7 @@ enum MyEnum {
 namespace Robotrónica {
       /**
        * Retorna el número de Fibonacci de la posición indicada.
-       * @param La posición del número de Fibonacci a mostrar, eg: 6
+       * @param value La posición del número de Fibonacci a mostrar, eg: 6
        */
       //% block
       export function fibonacci(value: number): number {
@@ -38,6 +38,6 @@ namespace Robotrónica {
      */
     //% block
     export function decirRobotrónica(): void {
-        basic.showString("Robotrónica");
+        basic.showString("Robotronica");
     }
 }
