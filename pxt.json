@@ -9,10 +9,11 @@
         "SSD1306_OLED": "github:tinkertanker/pxt-oled-ssd1306"
     },
     "files": [
+        "custom.ts",
         "README.md",
         "ns.ts",
         "wifi.ts",
-        "custom.ts"
+
     ],
     "testFiles": [
         "tests.ts"
