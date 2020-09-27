@@ -1,22 +1,21 @@
 {
     "name": "pxt-Robotrónica Salto",
-    "version": "1.0.0",
-    "description": "Bloques tomados prestados de otra extensión. Robotrónica Salto Uruguay.",
-    "license": "MIT",
+    "description": "Versión de prueba. Robotrónica Salto Uruguay.",
     "dependencies": {
         "core": "*",
-		"pxt-AlfonsoIOT-plugin": "github:AlfonsoIOT/pxt-robotic-shield",
-        "SSD1306_OLED": "github:tinkertanker/pxt-oled-ssd1306"
+        "radio": "*"
     },
     "files": [
-        "custom.ts",
+        "main.blocks",
+        "main.ts",
         "README.md",
-        "ns.ts",
-        "wifi.ts",
-
+        "custom.ts"
     ],
     "testFiles": [
-        "tests.ts"
+        "test.ts"
     ],
-    "public": true
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }

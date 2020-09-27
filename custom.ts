@@ -1,3 +1,4 @@
+
 /**
  * Utilice este archivo para definir funciones y bloques personalizados.
  * Lea más en https://makecode.microbit.org/blocks/custom
@@ -26,20 +27,29 @@ namespace Robotrónica {
         // Add code here
     }*/
 
-   /**
-     * Retorna el texto "Robotrónica"
+    /**
+     * Muestra una cadena de texto con la dirección de Robotrónica.
      */
-    //%block
-    export function decirRobotrónica(){
-        return('Robotronica');
+    //% block
+    export function direcciónRobotrónica(): string {
+        return 'Brasil 1086';
+    }
+    
+    /**
+     * Muestra la cadena de texto "Robotrónica".
+     */
+
+    //% block
+    export function decirRobotrónica(): void {
+        basic.showString("Robotrónica");
     }
 
     /**
-     * Retorna el valor de Fibonacci del número ingresado
-     * @param value describa el valor aquí, eg: 5
+     * Retorna el número de Fibonacci del número indicado.
+     * @param La posición del número de Fibonacci a mostrar, eg: 6
      */
     //% block
-    export function Fibonacci(value: number): number {
-        return value <= 1 ? value : Fibonacci(value -1) + Fibonacci(value - 2);
+    export function fibonacci(value: number): number {
+        return value <= 1 ? value : fibonacci(value -1) + fibonacci(value - 2);
     }
 }

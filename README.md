@@ -1,73 +1,31 @@
-# AlfonsoIOT Micro:bit
 
-A PXT library for Micro:bit IOT 
+> Open this page at [https://porotox.github.io/pxt-robotron/](https://porotox.github.io/pxt-robotron/)
 
-## Blocks
+## Use as Extension
 
-### 1. Initialize WiFi IoT 
+This repository can be added as an **extension** in MakeCode.
 
-Sets up the micro:bit WiFi IoT  used for the micro:bit.
+* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* click on **New Project**
+* click on **Extensions** under the gearwheel menu
+* search for **https://github.com/porotox/pxt-robotron** and import
 
-```blocks
-AlfonsoIoT.initializeWifi()
-```
+## Edit this project ![Build status badge](https://github.com/porotox/pxt-robotron/workflows/MakeCode/badge.svg)
 
-### 2. Set WiFi
+To edit this repository in MakeCode.
 
-Connect the Microbit WiFi IoT  to the WiFi (Home router)
+* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* click on **Import** then click on **Import URL**
+* paste **https://github.com/porotox/pxt-robotron** and click import
 
-```blocks
-AlfonsoIoT.setWifi("muselab", "12345678")
-```
+## Blocks preview
 
-Here we take "AlfonsoIOT" as router SSID and "12345678" as router password.
+This image shows the blocks code from the last commit in master.
+This image may take a few minutes to refresh.
 
+![A rendered view of the blocks](https://github.com/porotox/pxt-robotron/raw/master/.github/makecode/blocks.png)
 
-### 3. Set WiFi hotspot
+#### Metadata (used for search, rendering)
 
-Configure the Micro:bit WiFi IoT  as a hotspot.
-
-```blocks
-AlfonsoIoT.setWifiHotspot("muselab", "12345678")
-```
-
-For the hotspot, here we take "AlfonsoIOT" as SSID and "12345678" as password.
-
-
-### 4. Connect to ThingSpeak
-
-Upload data to ThingSpeak
-
-```blocks
-AlfonsoIoT.sendThingspeak("asdasdasdasdasdasd", 0, 0)
-```
-
-Here we take "Alfonso" as the ThingSpeak key, 0 as field1 value and 0 as field2 value.
-
-
-### 5. Connect to IFTTT
-
-Trigger the IFTTT cloud event such as email, sms and so on.
-
-```blocks
-    AlfonsoIoT.sendIFTTT(
-    "Alfonso",
-    "email",
-    0,
-    0
-    )
-```
-
-Here we take "Alfonso" as IFTTT key, email as event name, 0 as value1 and 0 as value2.
-
-## License
-
-MIT
-
-## Supported targets
-
-* for PXT/calliope
 * for PXT/microbit
-
-(The metadata above is needed for package search.)
-
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
