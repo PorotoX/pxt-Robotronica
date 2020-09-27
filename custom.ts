@@ -26,7 +26,7 @@ namespace Robotrónica {
       }
 
     /**
-     * Muestra una cadena de texto con la dirección de Robotrónica.
+     * Retorna una cadena de texto con la dirección de Robotrónica.
      */
     //% block
     export function direcciónRobotrónica(): string {
