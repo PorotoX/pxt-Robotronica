@@ -16,6 +16,11 @@ enum MyEnum {
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace Robotrónica {
+      //Para el sensorde temperatura MLX90614
+      const addr = 0x5A
+      const obTempAddr = 0x07
+      const amTempAddr = 0x06
+
       /**
        * Retorna el número de Fibonacci de la posición indicada.
        * @param value La posición del número de Fibonacci a mostrar, eg: 6
@@ -39,5 +44,39 @@ namespace Robotrónica {
     //% block
     export function decirRobotrónica(): void {
         basic.showString("Robotronica");
+    }
+
+    function read16(reg: NumberFormat.UInt8BE): number {
+       pins.i2cWriteNumber(addr, reg, NumberFormat.UInt8BE, true);
+       let ret = pins.i2cReadNumber(addr, NumberFormat.UInt16LE, true);
+       //ret |= pins.i2cReadNumber(addr, NumberFormat.UInt16LE) << 8
+       return ret
+    }
+
+    function readTemp(reg: NumberFormat.UInt8BE): number {
+       let temp = read16(reg)
+       temp *= .02
+       temp -= 273.15
+       return temp
+    }
+
+    function objectTemp(): number{
+       return readTemp(obTempAddr)
+    }
+
+    function ambientTemp(): number{
+       return readTemp(amTempAddr)
+    }
+
+    //%block="Temperature %loc"
+    export function temperaturaMLX90614(loc: TemperatureLocation): number{
+       switch (loc){
+           case 0:
+               return objectTemp();
+           case 1:
+               return ambientTemp();
+           default:
+               return 0;
+       }
     }
 }
