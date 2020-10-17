@@ -68,6 +68,7 @@ namespace Robotrónica {
        return readTemp(amTempAddr)
     }
 
+    //% subcategory=MLX90614 weight=55
     //%block="Temperatura MLX90614 %loc"
     export function temperatura(loc: TemperatureLocation): number{
        switch (loc){
