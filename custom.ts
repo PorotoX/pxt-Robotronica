@@ -11,6 +11,13 @@ enum MyEnum {
     Two
 }
 
+enum TemperatureLocation {
+    //%block="Object"
+    Object,
+    //%block="Ambiant"
+    Ambiant
+}
+
 /**
  * Bloques personalizados
  */
