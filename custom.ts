@@ -142,6 +142,7 @@ namespace Robotrónica {
     //% rx.defl=SerialPin.P12
     //% ssid.defl=your_ssid
     //% pw.defl=your_password weight=100
+    //% subcategory="ESP8266" weight=90
     export function initWIFI(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(
             tx,
@@ -156,8 +157,9 @@ namespace Robotrónica {
     * connect to Wifi router
     */
     //% block="connect Wifi SSID = %ssid|KEY = %pw"
-    //% ssid.defl=your_ssid
-    //% pw.defl=your_pw weight=95
+    //% ssid.defl=tu_ssid
+    //% pw.defl=tu_contraseña weight=95
+    //% subcategory="ESP8266" weight=90
     export function connectWifi(ssid: string, pw: string) {
         wifi_connected = false
         thingspeak_connected = false
@@ -265,6 +267,7 @@ namespace Robotrónica {
     */
     //% block="Wait %delay ms"
     //% delay.min=0 delay.defl=5000 weight=75
+    //% subcategory="ESP8266" weight=90
     export function wait(delay: number) {
         if (delay > 0) basic.pause(delay)
     }
@@ -273,6 +276,7 @@ namespace Robotrónica {
     * Check if ESP8266 successfully connected to Wifi
     */
     //% block="Wifi connected %State" weight=70
+    //% subcategory="ESP8266" weight=90
     export function wifiState(state: boolean) {
         if (wifi_connected == state) {
             return true
