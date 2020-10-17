@@ -68,8 +68,8 @@ namespace Robotrónica {
        return readTemp(amTempAddr)
     }
 
-    //%block="Temperature %loc"
-    export function temperaturaMLX90614(loc: TemperatureLocation): number{
+    //%block="TemperatureMLX90614 %loc"
+    export function temperatura(loc: TemperatureLocation): number{
        switch (loc){
            case 0:
                return objectTemp();
