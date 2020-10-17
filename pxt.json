@@ -1,6 +1,6 @@
 {
     "name": "pxt-Robotrónica Salto",
-    "description": "Versión de prueba. Robotrónica Salto Uruguay.",
+    "description": "Para trabajar en clase de Robótica en Robotrónica Salto Uruguay. Matemáticas, WiFi, Temperatura, IoT.",
     "dependencies": {
         "core": "*",
         "radio": "*"
